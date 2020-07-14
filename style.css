@@ -494,7 +494,7 @@ a{
 	margin:60px auto 0 auto;
     width:100%;
     max-width:1140px;
-    height:700px;
+    height:800px;
     position:relative;
 	-webkit-animation: comein 1.5s ease-in-out;
 	-moz-animation: comein 1.5s ease-in-out;
@@ -502,7 +502,7 @@ a{
 }
 @media(max-width:1440px){
     #all{
-        height: 110%;
+        height: 83%;
     }
     #allcontent{
         height: 700px;
@@ -510,7 +510,7 @@ a{
  }
 @media(max-width:900px){
     #all{
-        height: 100%;
+        height: 78%;
     }
     #allcontent{
         height: 80%;
@@ -518,9 +518,9 @@ a{
  }
 
 
-@media(max-width:800px){
+@media(max-width:850px){
     #all{
-        height: 90%;
+        height: 74%;
     }
     #allcontent{
         height: 80%;
@@ -528,7 +528,15 @@ a{
  }
 @media(max-width:700px){
     #all{
-        height: 80%;
+        height: 68%;
+    }
+    #allcontent{
+        height: 83%;
+    }
+ }
+ @media(max-width:650px){
+    #all{
+        height: 62%;
     }
     #allcontent{
         height: 83%;
@@ -536,20 +544,21 @@ a{
  }
 @media(max-width:600px){
     #all{
-        height: 70%;
+        height: 53%;
     }
     #allcontent{
         height: 80%;
     }
  }
- @media(max-width:400px){
+ @media(max-width:500px){
     #all{
-        height: 60%;
+        height: 48%;
     }
     #allcontent{
-        height: 70%;
+        height: 80%;
     }
  }
+ 
 
 .portfolio{
     width:100%;
@@ -618,7 +627,7 @@ a{
 }
 
 .opened {  
-	z-index: 1000;
+	z-index: 5;
 	left:0 !important;
 	-webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -737,7 +746,7 @@ a{
 	padding:0;
 	top:0;
 	left:0;
-	z-index:10001;
+	z-index:6;
 	position:absolute;
 }
 
@@ -842,7 +851,7 @@ a{
 	width: 100%;
 }
 .cuadro_intro_hover .caption-text{
-	z-index: 10;
+	z-index: 7;
 	color: #fff;
 	position: absolute;
 	height: 300px;
@@ -979,6 +988,7 @@ a{
             justify-content: center;
     padding-top: 0.6%;
     padding-bottom: 0.6%;
+    
   }
   
   #sym ul li {
@@ -1360,7 +1370,7 @@ a{
   
   
     header {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       padding: 0 50px;
@@ -1458,6 +1468,7 @@ a{
       font-size: 24px;
       cursor: pointer;
       display: none;
+      z-index: 2001;
     }
     
     @media (max-width: 991px)  {
@@ -1469,6 +1480,8 @@ a{
       .menu-toggle {
         
         display: block;
+        z-index: 2001;
+        position: relative;
       }
       header nav ul li.sub-menu:before{
         margin-right: 20px;
@@ -1489,7 +1502,14 @@ a{
         
         left: 0;
         background: rgba(0,0,0,0.9);
+        min-height: 100vh;
+        text-align: center;
+        position: fixed;
+        top:0;
+        padding-top: 20%;
+        z-index: 2000;
       } 
+      
       
       header nav ul {
         display: block;
